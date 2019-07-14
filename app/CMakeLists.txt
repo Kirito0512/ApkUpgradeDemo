@@ -33,6 +33,24 @@ add_library( # Specifies the name of the library.
         src/main/jni/bzip2/spewG.c
         src/main/jni/bzip2/unzcrash.c)
 
+add_library(bspatch
+
+        SHARED
+
+        src/main/cpp/bspatch.cpp
+        src/main/jni/bzip2/blocksort.c
+        src/main/jni/bzip2/bzip2.c
+        src/main/jni/bzip2/bzip2recover.c
+        src/main/jni/bzip2/bzlib.c
+        src/main/jni/bzip2/compress.c
+        src/main/jni/bzip2/crctable.c
+        src/main/jni/bzip2/decompress.c
+        src/main/jni/bzip2/dlltest.c
+        src/main/jni/bzip2/huffman.c
+        src/main/jni/bzip2/mk251.c
+        src/main/jni/bzip2/randtable.c
+        src/main/jni/bzip2/spewG.c
+        src/main/jni/bzip2/unzcrash.c)
 # Specifies a path to native header files.
 include_directories(src/main/cpp/include/)
 
